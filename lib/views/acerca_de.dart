@@ -6,6 +6,12 @@ class PantallaAcercaDe extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text('Acerca de'),
+        leading: IconButton(
+          icon: Icon(Icons.arrow_back),
+          onPressed: () {
+            Navigator.pop(context);
+          },
+        ),
       ),
       body: Center(
         child: Padding(
